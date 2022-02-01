@@ -32,5 +32,13 @@ table tr td{
 .setwidth{
     width:30px;
 }
+.ht {
+    width:30px;
+    height: 55px;
+}
+
+.setwidth2 {
+    width: 80px;
+}
 
 
