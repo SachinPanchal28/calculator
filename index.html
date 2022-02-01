@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDowm_Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js" defer></script> -->
+    <script lang="javascript">
+        function calc(n) {
+    if (n == "="){
+        document.f.t1.value = eval(document.f.t1.value);
+    } else {
+        document.f.t1.value = document.f.t1.value+n
+    }
+
+ 
+}
+    </script>
+</head>
+<body>
+
+
+    <div>
+        <form name=f >
+            <table cellpadding='5' cellspacing="0" border="0" align="center" >
+                <tr>
+                    <td colspan='4' ><input type="text" name="t1"></td>
+                </tr>
+                <tr>
+                    <td><input class="setwidth" type="button" name="b1" value="1" onclick="calc('1');"></td>
+                    <td><input class="setwidth" type="button" name="b2" value="2" onclick="calc('2');"></td>
+                    <td><input class="setwidth" type="button" name="b3" value="3" onclick="calc('3');"></td>
+                    <td><input class="setwidth" type="button" name="b4" value="/" onclick="calc('/');"></td>
+                </tr>
+                <tr>
+                    <td><input class="setwidth" type="button" name="b5" value="4" onclick="calc('4');"></td>
+                    <td><input class="setwidth" type="button" name="b6" value="5" onclick="calc('5');"></td>
+                    <td><input class="setwidth" type="button" name="b7" value="6" onclick="calc('6');"></td>
+                    <td><input class="setwidth" type="button" name="b8" value="-" onclick="calc('-');"></td>
+                </tr>
+                <tr>
+                    <td><input class="setwidth" type="button" name="b9" value="7" onclick="calc('7');"></td>
+                    <td><input class="setwidth" type="button" name="b10" value="8" onclick="calc('8');"></td>
+                    <td><input class="setwidth" type="button" name="b11" value="9" onclick="calc('9');"></td>
+                    <td><input class="setwidth" type="button" name="b12" value="*" onclick="calc('*');"></td>
+                </tr>
+                <tr>
+                    <td><input class="setwidth" type="button" name="b13" value="0" onclick="calc('0');"></td>
+                    <td><input class="setwidth" type="button" name="b14" value="." onclick="calc('.');"></td>
+                    <td><input class="setwidth" type="button" name="b15" value="+" onclick="calc('+');"></td>
+                    <td><input class="setwidth" type="button" name="b16" value="=" onclick="calc('=');"></td>
+                </tr>
+                <!-- <tr>
+                    <td><input class="setwidth" type="button" name="b17" value="AC" onclick=""></td>
+                    <td><input class="setwidth" type="button" name="b18" value="%" onclick=""></td>
+                    <td><input class="setwidth" type="button" name="b19" value="+" onclick=""></td>
+                    <td><input class="setwidth" type="button" name="b20" value="=" onclick=""></td>
+                </tr> -->
+        </table>
+    </form>
+</div>
+
+    
+</body>
+</html>
