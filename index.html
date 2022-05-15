@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +10,21 @@
     <!-- <script src="script.js" defer></script> -->
     <script lang="javascript">
         function calc(n) {
-    if (n == "="){
-        document.f.t1.value = eval(document.f.t1.value);
-    } else {
-        document.f.t1.value = document.f.t1.value+n
-    }
+            if (n == "=") {
+                document.f.t1.value = eval(document.f.t1.value);
+            } else {
+                document.f.t1.value = document.f.t1.value + n;
+            }
 
- 
-}
+
+        }
     </script>
 </head>
+
 <body>
-
-
     <div>
-        <form name=f >
-            <table cellpadding='5' cellspacing="0" border="0" align="center" >
+        <form name=f>
+            <table cellpadding='5' cellspacing="0" border="0" align="center">
                 <tr>
                     <td colspan="4"><input class="text" id="clear" type="text" name="t1"></td>
                 </tr>
@@ -53,13 +53,14 @@
                     <!-- <td><input class="setwidth" type="button" name="b16" value="%" onclick="calc('%');"></td> -->
                 </tr>
                 <tr>
-                    <td colspan='2' ><input class="setwidth2" type="button" name="b17" value="AC" onclick="document.getElementById('clear').value = '0'"></td>
-                    <td colspan='2' ><input class="setwidth2" type="button" name="b18" value="=" onclick="calc('=');"></td>
-                </tr> 
-        </table>
-    </form>
-</div>
-
-    
+                    <td colspan='2'><input class="setwidth2" type="button" name="b17" value="AC"
+                            onclick="document.getElementById('clear').value = '0'"></td>
+                    <td colspan='2'><input class="setwidth2" type="button" name="b18" value="=" onclick="calc('=');">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
+
 </html>
